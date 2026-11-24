@@ -2,36 +2,38 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleDisplayName</key>
-    <string>EHR Demo</string>
-    <key>CFBundleExecutable</key>
-    <string>$(EXECUTABLE_NAME)</string>
-    <key>CFBundleIdentifier</key>
-    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-    <key>CFBundleName</key>
-    <string>$(PRODUCT_NAME)</string>
-    <key>CFBundlePackageType</key>
-    <string>APPL</string>
-    <key>CFBundleShortVersionString</key>
-    <string>1.0</string>
-    <key>CFBundleVersion</key>
-    <string>1</string>
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleTypeRole</key>
-            <string>Editor</string>
-            <key>CFBundleURLName</key>
-            <string>$(PRODUCT_BUNDLE_IDENTIFIER).oauth</string>
-            <key>CFBundleURLSchemes</key>
-            <array><string>ehr-demo</string></array>
-        </dict>
-    </array>
-    <key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
-    <string>Read your clinical records from Apple Health so you can view and compare them on this device.</string>
-    <key>NSHealthShareUsageDescription</key>
-    <string>Read records you choose to share from Apple Health and display them in the Apple Health tab.</string>
-    <key>UILaunchScreen</key>
-    <dict/>
+	<key>CFBundleDisplayName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).oauth</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>ehr-demo</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>Read your clinical records from Apple Health so you can view and compare them on this device.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Read records you choose to share from Apple Health and display them in the Apple Health tab.</string>
+	<key>UILaunchScreen</key>
+	<dict/>
 </dict>
 </plist>
