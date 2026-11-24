@@ -1,0 +1,25 @@
+name: EHRDemo
+targets:
+  EHRDemo:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: EHRDemo
+        excludes: [Configuration]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.ehrdemo.ios
+        SWIFT_VERSION: "6.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        INFOPLIST_FILE: EHRDemo/Configuration/Info.plist
+        CODE_SIGN_ENTITLEMENTS: EHRDemo/Configuration/EHRDemo.entitlements
+    attributes:
+      SystemCapabilities:
+        com.apple.HealthKit:
+          enabled: 1
+schemes:
+  EHRDemo:
+    build:
+      targets:
+        EHRDemo: all
