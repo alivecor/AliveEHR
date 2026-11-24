@@ -27,6 +27,7 @@
 		B1D5839AADB337C8594EB3EB /* BloodPressureObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA877A4F07A330CC164FF25 /* BloodPressureObservation.swift */; };
 		B292242750872F5355D2F37F /* AppleHealthRecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C593098268433952AB7173BC /* AppleHealthRecordsView.swift */; };
 		C1F044204C374BF809569810 /* CategoryFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1C6910DA86FDE419D3B5C /* CategoryFilterBar.swift */; };
+		CC1EF7E4E0734F62A55B36F0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 476B810F30B606D400402DE5 /* Media.xcassets */; };
 		E0B7DED38DF7258C5FF37547 /* FHIRSandboxEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30BEFDA39524B7717C4FF55 /* FHIRSandboxEnvironment.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		0F32BCF29229E80D004E4EBF /* SMARTClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMARTClient.swift; sourceTree = "<group>"; };
 		1A8F01BBC5E57F43E349CD68 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		24A827E4280574FA8B6E193E /* SourceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceCard.swift; sourceTree = "<group>"; };
+		476B810F30B606D400402DE5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4C621C8100616E55749DD348 /* EHR Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EHR Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F5C6BA27CDA1AE3A1CF6C0F /* ConnectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsView.swift; sourceTree = "<group>"; };
 		6C159E2E8357C6182F37DBBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				6F8B2532DB4559F1A87184D0 /* Models */,
 				C09FB22CCC7DF93B60611A70 /* Services */,
 				5C38714553054CE2C510F978 /* Views */,
+				476B810F30B606D400402DE5 /* Media.xcassets */,
 			);
 			path = EHRDemo;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildConfigurationList = 712899FC1ABD45377DE7FF9A /* Build configuration list for PBXNativeTarget "EHRDemo" */;
 			buildPhases = (
 				823B0CFAC598C3143115679F /* Sources */,
+				FC5F525376FC435BB662C8A3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -159,7 +163,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 2720;
 				TargetAttributes = {
 					56C79F4F18FE80EFBDA630F6 = {
 						SystemCapabilities = "[\"com.apple.HealthKit\": [\"enabled\": 1]]";
@@ -184,6 +188,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC5F525376FC435BB662C8A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1EF7E4E0734F62A55B36F0 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		823B0CFAC598C3143115679F /* Sources */ = {
@@ -221,6 +236,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -254,6 +270,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -266,6 +283,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -276,8 +294,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = EHRDemo/Configuration/EHRDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 86YX7T745R;
 				INFOPLIST_FILE = EHRDemo/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -297,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -330,6 +351,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -342,6 +364,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -352,8 +375,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = EHRDemo/Configuration/EHRDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = S7954PY7JT;
 				INFOPLIST_FILE = EHRDemo/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -373,8 +398,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = EHRDemo/Configuration/EHRDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 86YX7T745R;
 				INFOPLIST_FILE = EHRDemo/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -394,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -427,6 +455,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -446,6 +475,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
