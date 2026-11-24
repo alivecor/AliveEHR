@@ -1,0 +1,61 @@
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode Build & Generated Files
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.hmap
+*.xcarchive
+
+# Xcode User Settings & Workspace State
+xcuserdata/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# Xcode Playgrounds & Instruments
+timeline.xctimeline
+playground.xcworkspace
+*.memgraph
+
+# Swift Package Manager (SPM)
+.build/
+.swiftpm/
+# Uncomment below if you don't want to commit package dependency versions
+# Packages/
+# Package.pins
+# Package.resolved
+
+# CocoaPods
+# Uncomment Pods/ if you prefer not to check in third-party dependencies
+# Pods/
+# *.xcworkspace
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+fastlane/*.env
+
+# Code Injection
+iOSInjectionProject/
