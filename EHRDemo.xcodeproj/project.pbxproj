@@ -34,7 +34,7 @@
 		0F32BCF29229E80D004E4EBF /* SMARTClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMARTClient.swift; sourceTree = "<group>"; };
 		1A8F01BBC5E57F43E349CD68 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		24A827E4280574FA8B6E193E /* SourceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceCard.swift; sourceTree = "<group>"; };
-		4C621C8100616E55749DD348 /* EHRDemo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = EHRDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C621C8100616E55749DD348 /* EHRDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EHRDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F5C6BA27CDA1AE3A1CF6C0F /* ConnectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsView.swift; sourceTree = "<group>"; };
 		6C159E2E8357C6182F37DBBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E67CAE384565F55FF82DE04 /* RecordDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetailSheet.swift; sourceTree = "<group>"; };
@@ -278,13 +278,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EHRDemo/Configuration/EHRDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 86YX7T745R;
 				INFOPLIST_FILE = EHRDemo/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.ehrdemo.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alivecor.ehrdemo.debug;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,13 +298,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EHRDemo/Configuration/EHRDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 86YX7T745R;
 				INFOPLIST_FILE = EHRDemo/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.ehrdemo.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alivecor.ehrdemo.debug;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
